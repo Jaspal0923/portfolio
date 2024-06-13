@@ -4,14 +4,17 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 0;
 }
 
 .awards-right {
+  margin-left: 200px;
   width: 45%;
 }
 
 .awards-left {
   width: 55%;
+  margin-right: 200px;
   display: flex;
   height: 55vh;
   justify-content: center;

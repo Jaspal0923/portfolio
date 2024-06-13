@@ -5,6 +5,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
+import aboutPic from "../Images/me/IMG_0359.png";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const AboutMe = () => {
@@ -19,7 +21,7 @@ const AboutMe = () => {
         y: 0,
         duration: 1,
         stagger: 0.3,
-        ease: "power2.out",
+        ease: "power2.inOut",
         scrollTrigger: {
           trigger: ".aboutLeft, .aboutRight",
           start: "top 80%",
@@ -34,8 +36,8 @@ const AboutMe = () => {
       {
         opacity: 1,
         y: 0,
-        delay: 1,
-        duration: 2,
+        delay: 0.4,
+        duration: 1,
         stagger: 0.3,
         ease: "power2.out",
         scrollTrigger: {
@@ -67,7 +69,7 @@ const AboutMe = () => {
         </p>
       </div>
       <div className="aboutRight">
-        <img src="" alt="PICTURE"></img>
+        <img src={aboutPic} alt="PICTURE" className="aboutPic"></img>
       </div>
     </section>
   );

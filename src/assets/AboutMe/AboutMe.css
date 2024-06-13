@@ -13,12 +13,12 @@
   margin-bottom: 40px;
 }
 .aboutLeft {
-  padding: 0 50px;
   width: 60%;
+  margin-left: 200px;
 }
 
 .aboutRight {
-  height: 60vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,17 +35,28 @@
 .FaArrowR {
   font-size: 12px;
 }
+
+.aboutPic {
+  height: 70vh;
+  width: 100%;
+}
 @media only screen and (max-width: 980px) {
   .aboutMe {
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: 75vh;
   }
   .aboutLeft {
+    margin: 0;
     padding: 0 50px;
     width: 100%;
   }
   .aboutRight {
-    padding: 0 50px;
+    border: 1px solid;
     width: 100%;
+  }
+  .aboutPic {
+    height: 70vh;
+    max-width: 60vh;
+    width: 80vh;
   }
 }
