@@ -1,0 +1,51 @@
+.aboutMe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: space-between;
+  text-align: left;
+  min-height: 40vh;
+  padding: 0;
+}
+
+.aboutMe h2 {
+  margin-bottom: 40px;
+}
+.aboutLeft {
+  padding: 0 50px;
+  width: 60%;
+}
+
+.aboutRight {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.about-btn {
+  margin-top: 15px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #000000ab;
+}
+
+.FaArrowR {
+  font-size: 12px;
+}
+@media only screen and (max-width: 980px) {
+  .aboutMe {
+    flex-direction: column;
+    height: 75vh;
+  }
+  .aboutLeft {
+    padding: 0 50px;
+    width: 100%;
+  }
+  .aboutRight {
+    padding: 0 50px;
+    width: 100%;
+  }
+}

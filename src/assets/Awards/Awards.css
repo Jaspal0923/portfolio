@@ -1,0 +1,37 @@
+.awards {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.awards-right {
+  width: 45%;
+}
+
+.awards-left {
+  width: 55%;
+  display: flex;
+  height: 55vh;
+  justify-content: center;
+}
+
+.awards-img img {
+  margin-top: 45px;
+  height: 150px;
+  width: 150px;
+}
+
+.certs-img {
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel .slide {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel .slide.selected {
+  opacity: 1;
+}
